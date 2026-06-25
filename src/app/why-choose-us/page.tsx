@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
         <div className="container relative z-10 mx-auto px-6 text-center lg:text-left">
           <div className="max-w-3xl">
             <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-5xl md:text-7xl font-bold text-luxury-white mb-6 leading-tight">Why Choose <span className="text-luxury-gold">Arrowhead</span></motion.h1>
-            <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-xl text-luxury-stone font-light leading-relaxed mb-10">We don't just promise excellence; we guarantee it in writing. Discover why homeowners and property managers trust us with their most valuable assets.</motion.p>
+            <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-xl text-luxury-stone font-light leading-relaxed mb-10">We don&apos;t just promise excellence; we guarantee it in writing. Discover why homeowners and property managers trust us with their most valuable assets.</motion.p>
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
               <Link href="/contact" className="px-8 py-4 bg-luxury-gold text-white font-semibold rounded-sm tracking-wide hover:bg-luxury-brown transition-all">Get a Free Estimate</Link>
             </motion.div>

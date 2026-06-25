@@ -21,8 +21,8 @@ export default function Services() {
       </section>
 
       {servicesList.map((service, index) => (
-        <section key={index} className={\`py-24 \${index % 2 === 0 ? 'bg-luxury-white' : 'bg-luxury-warm'}\`}>
-          <div className={\`container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center \${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}\`}>
+        <section key={index} className={"py-24 " + (index % 2 === 0 ? "bg-luxury-white" : "bg-luxury-warm")}>
+          <div className={"container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center " + (index % 2 !== 0 ? "md:flex-row-reverse" : "")}>
             <motion.div initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
               <h2 className="text-4xl font-bold text-luxury-dark mb-6">{service.title}</h2>
               <p className="text-lg text-luxury-brown/80 font-light leading-relaxed mb-8">{service.desc}</p>

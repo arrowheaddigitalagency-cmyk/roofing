@@ -23,7 +23,7 @@ export default function Projects() {
 
         <div className="flex justify-center space-x-4 mb-16 overflow-x-auto pb-4">
           {["All Projects", "Residential", "Commercial", "Restoration", "Metal"].map((cat, i) => (
-             <button key={i} className={\`px-6 py-2 rounded-full border \${i===0 ? 'bg-luxury-dark text-white border-luxury-dark' : 'border-luxury-stone text-luxury-brown hover:border-luxury-gold hover:text-luxury-gold'} transition-all whitespace-nowrap\`}>{cat}</button>
+             <button key={i} className={"px-6 py-2 rounded-full border " + (i===0 ? "bg-luxury-dark text-white border-luxury-dark" : "border-luxury-stone text-luxury-brown hover:border-luxury-gold hover:text-luxury-gold") + " transition-all whitespace-nowrap"}>{cat}</button>
           ))}
         </div>
 
@@ -46,7 +46,7 @@ export default function Projects() {
            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop')] opacity-10 bg-cover bg-center"></div>
            <div className="relative z-10">
              <h2 className="text-4xl font-bold mb-6">Inspired by what you see?</h2>
-             <p className="text-luxury-stone text-lg mb-8 max-w-2xl mx-auto font-light">Let's discuss how Arrowhead Digitech can bring the same level of luxury and protection to your property.</p>
+             <p className="text-luxury-stone text-lg mb-8 max-w-2xl mx-auto font-light">Let&apos;s discuss how Arrowhead Digitech can bring the same level of luxury and protection to your property.</p>
              <Link href="/contact" className="inline-block px-10 py-5 bg-luxury-gold text-white font-semibold rounded-sm hover:bg-luxury-brown transition-all">Start Your Project</Link>
            </div>
         </div>
