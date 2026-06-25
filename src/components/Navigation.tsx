@@ -41,7 +41,7 @@ export default function Navigation() {
     : "bg-transparent py-6";
 
   return (
-    <nav className={\`fixed w-full z-50 transition-all duration-300 \${navBackgroundClass}\`}>
+    <nav className={"fixed w-full z-50 transition-all duration-300 " + navBackgroundClass}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold tracking-widest text-luxury-white flex items-center group">
@@ -54,7 +54,7 @@ export default function Navigation() {
               <Link 
                 key={link.name} 
                 href={link.href} 
-                className={\`text-sm font-medium uppercase tracking-widest transition-colors hover:text-luxury-gold \${pathname === link.href ? 'text-luxury-gold border-b border-luxury-gold' : 'text-luxury-white'}\`}
+                className={"text-sm font-medium uppercase tracking-widest transition-colors hover:text-luxury-gold " + (pathname === link.href ? 'text-luxury-gold border-b border-luxury-gold' : 'text-luxury-white')}
               >
                 {link.name}
               </Link>
@@ -83,7 +83,7 @@ export default function Navigation() {
                 key={link.name} 
                 href={link.href} 
                 onClick={() => setMobileMenuOpen(false)}
-                className={\`text-lg font-medium tracking-widest transition-colors \${pathname === link.href ? 'text-luxury-gold' : 'text-luxury-white'}\`}
+                className={"text-lg font-medium tracking-widest transition-colors " + (pathname === link.href ? 'text-luxury-gold' : 'text-luxury-white')}
               >
                 {link.name}
               </Link>
