@@ -81,7 +81,7 @@ export default function Gallery() {
                >
                  {/* Provide random natural heights to simulate true masonry varying heights */}
                  <div className={"relative w-full " + (img.id % 3 === 0 ? "h-96" : img.id % 2 === 0 ? "h-80" : "h-64")}>
-                   <Image 
+                   <Image unoptimized  
                      src={img.src} 
                      alt={"Roofing Project " + img.category} 
                      fill
@@ -131,7 +131,7 @@ export default function Gallery() {
               className="relative w-full max-w-6xl max-h-[90vh] aspect-video rounded-sm overflow-hidden shadow-2xl border border-white/10"
               onClick={(e) => e.stopPropagation()}
             >
-              <Image 
+              <Image unoptimized  
                 src={lightboxImg} 
                 alt="Enlarged Roofing View" 
                 fill 

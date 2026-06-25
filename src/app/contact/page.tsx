@@ -49,7 +49,7 @@ export default function Contact() {
       {/* Contact Hero with Image */}
       <section className="relative pt-40 pb-24 overflow-hidden">
          <div className="absolute inset-0 z-0">
-            <Image src="https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop" alt="Roofing Construction Workers" fill className="object-cover" />
+            <Image unoptimized  src="https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop" alt="Roofing Construction Workers" fill className="object-cover" />
             <div className="absolute inset-0 bg-luxury-dark/90"></div>
          </div>
          <div className="container relative z-10 mx-auto px-6">
@@ -139,7 +139,7 @@ export default function Contact() {
             
             {/* Embedded Map Representation via Image */}
             <div className="h-64 relative rounded-sm w-full flex items-center justify-center border border-luxury-stone/30 overflow-hidden shadow-xl">
-               <Image src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" alt="Location Map" fill className="object-cover opacity-80" />
+               <Image unoptimized  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" alt="Location Map" fill className="object-cover opacity-80" />
                <div className="absolute inset-0 bg-luxury-dark/40"></div>
                <div className="relative z-10 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full flex items-center shadow-lg cursor-pointer hover:bg-luxury-gold hover:text-white transition-colors">
                   <MapPin className="mr-2 w-5 h-5" />

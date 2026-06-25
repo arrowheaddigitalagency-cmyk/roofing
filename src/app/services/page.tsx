@@ -34,7 +34,7 @@ export default function Services() {
               <Link href="/contact" className="inline-block px-8 py-4 bg-luxury-gold text-white font-semibold rounded-sm hover:bg-luxury-brown transition-all">Request an Estimate</Link>
             </motion.div>
             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="relative h-[400px] shadow-2xl rounded-sm overflow-hidden">
-              <Image src={service.img} alt={service.title} fill className="object-cover" />
+              <Image unoptimized  src={service.img} alt={service.title} fill className="object-cover" />
             </motion.div>
           </div>
         </section>

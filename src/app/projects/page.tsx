@@ -31,7 +31,7 @@ export default function Projects() {
           {projects.map((proj, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: i*0.1 }} viewport={{ once: true }} className="group cursor-pointer">
               <div className="relative h-80 w-full overflow-hidden rounded-sm mb-6 shadow-xl">
-                <Image src={proj.img} alt={proj.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+                <Image unoptimized  src={proj.img} alt={proj.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-luxury-dark/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-between p-6">
                   <span className="text-luxury-gold font-semibold uppercase tracking-widest text-sm">View Details</span>
                 </div>

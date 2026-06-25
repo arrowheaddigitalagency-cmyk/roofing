@@ -9,7 +9,7 @@ export default function About() {
     <div className="overflow-hidden bg-luxury-warm min-h-screen">
       <section className="relative pt-40 pb-24 flex items-center justify-center">
         <div className="absolute inset-0 z-0">
-          <Image src="https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop" alt="Arrowhead Digitech Team" fill className="object-cover" priority />
+          <Image unoptimized  src="https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop" alt="Arrowhead Digitech Team" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-luxury-dark/80 backdrop-blur-sm"></div>
         </div>
         <div className="container relative z-10 mx-auto px-6 text-center">
@@ -26,7 +26,7 @@ export default function About() {
             <p className="text-luxury-brown/80 text-lg leading-relaxed font-light">We don&apos;t just build roofs; we engineer comprehensive protection systems designed to withstand the harshest elements while enhancing the architectural beauty of your property.</p>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="relative h-96 rounded-sm overflow-hidden shadow-2xl">
-            <Image src="https://images.unsplash.com/photo-1504307651254-35680f356f27?q=80&w=2070&auto=format&fit=crop" alt="Roofing Construction" fill className="object-cover" />
+            <Image unoptimized  src="https://images.unsplash.com/photo-1504307651254-35680f356f27?q=80&w=2070&auto=format&fit=crop" alt="Roofing Construction" fill className="object-cover" />
           </motion.div>
         </div>
       </section>

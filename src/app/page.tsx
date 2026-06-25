@@ -32,12 +32,12 @@ export default function Home() {
   ];
 
   return (
-    <div className="overflow-hidden bg-luxury-warm">
+    <div className="bg-luxury-warm">
       
       {/* SECTION 1: Full Screen Premium Hero */}
       <section ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
-          <Image src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Luxury Home Roofing" fill className="object-cover" priority />
+          <Image unoptimized  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Luxury Home Roofing" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-luxury-dark/80 via-luxury-dark/50 to-luxury-warm"></div>
         </motion.div>
         
@@ -87,7 +87,7 @@ export default function Home() {
               </Link>
            </motion.div>
            <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="relative h-[600px] rounded-sm overflow-hidden shadow-2xl">
-              <Image src="https://images.unsplash.com/photo-1504307651254-35680f356f27?q=80&w=2070&auto=format&fit=crop" alt="Roofing Crew" fill className="object-cover" />
+              <Image unoptimized  src="https://images.unsplash.com/photo-1504307651254-35680f356f27?q=80&w=2070&auto=format&fit=crop" alt="Roofing Crew" fill className="object-cover" />
            </motion.div>
         </div>
       </section>
@@ -104,7 +104,7 @@ export default function Home() {
             {services.map((service, index) => (
               <motion.div key={service.title} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: index * 0.1 }} viewport={{ once: true }} className="group relative rounded-sm overflow-hidden bg-luxury-white shadow-xl hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-2 border border-luxury-stone/20">
                 <div className="relative h-64 overflow-hidden">
-                  <Image src={service.image} alt={service.title} fill className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
+                  <Image unoptimized  src={service.image} alt={service.title} fill className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
                   <div className="absolute inset-0 bg-gradient-to-t from-luxury-dark/90 via-luxury-dark/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
                   <div className="absolute bottom-6 left-6 bg-luxury-white/10 backdrop-blur-md p-3 rounded-sm border border-luxury-white/20">
                     <service.icon className="text-luxury-gold w-8 h-8" />
@@ -127,7 +127,7 @@ export default function Home() {
       <section className="py-32 bg-luxury-dark text-luxury-white">
          <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[500px] rounded-sm overflow-hidden shadow-2xl">
-               <Image src="https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop" alt="Quality Roofing Materials" fill className="object-cover" />
+               <Image unoptimized  src="https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop" alt="Quality Roofing Materials" fill className="object-cover" />
             </div>
             <div>
                <h2 className="text-4xl md:text-5xl font-bold mb-8">Why Choose Arrowhead Digitech?</h2>
@@ -156,7 +156,7 @@ export default function Home() {
                <Link href="/services" className="text-luxury-gold font-bold uppercase tracking-widest border-b-2 border-luxury-gold pb-1 hover:text-luxury-brown hover:border-luxury-brown transition-colors">View Residential Services</Link>
             </div>
             <div className="flex-1 w-full relative h-[400px] rounded-sm overflow-hidden shadow-xl">
-               <Image src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Luxury Residential Roof" fill className="object-cover" />
+               <Image unoptimized  src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Luxury Residential Roof" fill className="object-cover" />
             </div>
          </div>
       </section>
@@ -170,7 +170,7 @@ export default function Home() {
                <Link href="/services" className="text-luxury-gold font-bold uppercase tracking-widest border-b-2 border-luxury-gold pb-1 hover:text-luxury-brown hover:border-luxury-brown transition-colors">View Commercial Services</Link>
             </div>
             <div className="flex-1 w-full relative h-[400px] rounded-sm overflow-hidden shadow-xl">
-               <Image src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Commercial Flat Roof" fill className="object-cover" />
+               <Image unoptimized  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Commercial Flat Roof" fill className="object-cover" />
             </div>
          </div>
       </section>
@@ -184,7 +184,7 @@ export default function Home() {
                <Link href="/services" className="text-luxury-gold font-bold uppercase tracking-widest border-b-2 border-luxury-gold pb-1 hover:text-luxury-brown hover:border-luxury-brown transition-colors">Schedule an Inspection</Link>
             </div>
             <div className="flex-1 w-full relative h-[400px] rounded-sm overflow-hidden shadow-xl">
-               <Image src="https://images.unsplash.com/photo-1543884175-9c869910d6e8?q=80&w=1964&auto=format&fit=crop" alt="Roof Inspection and Repair" fill className="object-cover" />
+               <Image unoptimized  src="https://images.unsplash.com/photo-1543884175-9c869910d6e8?q=80&w=1964&auto=format&fit=crop" alt="Roof Inspection and Repair" fill className="object-cover" />
             </div>
          </div>
       </section>
@@ -195,11 +195,11 @@ export default function Home() {
             <h2 className="text-5xl font-bold mb-16">The Arrowhead Transformation</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                <div className="relative h-96 rounded-sm overflow-hidden border border-white/20">
-                  <Image src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop" alt="Before Roof Replacement" fill className="object-cover opacity-80" />
+                  <Image unoptimized  src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop" alt="Before Roof Replacement" fill className="object-cover opacity-80" />
                   <div className="absolute top-4 left-4 bg-black/70 px-4 py-2 font-bold tracking-widest uppercase text-sm">Before</div>
                </div>
                <div className="relative h-96 rounded-sm overflow-hidden border border-luxury-gold/50">
-                  <Image src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="After Roof Replacement" fill className="object-cover" />
+                  <Image unoptimized  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="After Roof Replacement" fill className="object-cover" />
                   <div className="absolute top-4 left-4 bg-luxury-gold text-luxury-dark px-4 py-2 font-bold tracking-widest uppercase text-sm">After</div>
                </div>
             </div>
@@ -209,7 +209,7 @@ export default function Home() {
       {/* SECTION 10: Project Statistics */}
       <section className="py-20 bg-luxury-gold relative overflow-hidden">
          <div className="absolute inset-0 opacity-10">
-            <Image src="https://images.unsplash.com/photo-1632759145355-66774f9d2732?q=80&w=2070&auto=format&fit=crop" alt="Texture" fill className="object-cover" />
+            <Image unoptimized  src="https://images.unsplash.com/photo-1632759145355-66774f9d2732?q=80&w=2070&auto=format&fit=crop" alt="Texture" fill className="object-cover" />
          </div>
          <div className="container mx-auto px-6 relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div><h3 className="text-5xl font-bold text-white mb-2">2,500+</h3><p className="text-luxury-dark font-bold uppercase tracking-widest">Roofs Installed</p></div>
@@ -235,7 +235,7 @@ export default function Home() {
                ].map((item, i) => (
                  <div key={i} className="flex flex-col md:flex-row items-center gap-8 bg-luxury-warm p-6 rounded-sm border border-luxury-stone/20 shadow-lg">
                     <div className="w-full md:w-1/3 h-48 relative rounded-sm overflow-hidden">
-                       <Image src={item.img} alt={item.title} fill className="object-cover" />
+                       <Image unoptimized  src={item.img} alt={item.title} fill className="object-cover" />
                     </div>
                     <div className="w-full md:w-2/3">
                        <span className="text-luxury-gold font-bold text-2xl mb-2 block">{item.step}</span>
@@ -251,7 +251,7 @@ export default function Home() {
       {/* SECTION 12: Testimonials */}
       <section className="py-32 bg-luxury-dark relative overflow-hidden">
          <div className="absolute inset-0 opacity-20">
-            <Image src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=2070&auto=format&fit=crop" alt="Roofing Background" fill className="object-cover" />
+            <Image unoptimized  src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=2070&auto=format&fit=crop" alt="Roofing Background" fill className="object-cover" />
          </div>
          <div className="container mx-auto px-6 relative z-10 text-center">
             <h2 className="text-5xl font-bold text-luxury-white mb-16">Client Experiences</h2>
@@ -287,7 +287,7 @@ export default function Home() {
                </div>
             </div>
             <div className="relative h-[600px] rounded-sm overflow-hidden shadow-2xl">
-               <Image src="https://images.unsplash.com/photo-1628189689452-f67fce533e55?q=80&w=2070&auto=format&fit=crop" alt="Drone Roof Inspection" fill className="object-cover" />
+               <Image unoptimized  src="https://images.unsplash.com/photo-1628189689452-f67fce533e55?q=80&w=2070&auto=format&fit=crop" alt="Drone Roof Inspection" fill className="object-cover" />
             </div>
          </div>
       </section>
@@ -295,7 +295,7 @@ export default function Home() {
       {/* SECTION 14: Contact CTA */}
       <section className="py-32 relative overflow-hidden text-center">
          <div className="absolute inset-0 z-0">
-            <Image src="https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop" alt="Roofing Construction Workers" fill className="object-cover" />
+            <Image unoptimized  src="https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop" alt="Roofing Construction Workers" fill className="object-cover" />
             <div className="absolute inset-0 bg-luxury-dark/90"></div>
          </div>
          <div className="container relative z-10 mx-auto px-6">
