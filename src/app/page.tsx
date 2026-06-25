@@ -275,7 +275,7 @@ export default function Home() {
                    <div key={i} className="bg-luxury-white rounded-sm shadow-sm border border-luxury-stone/20 overflow-hidden cursor-pointer" onClick={() => setActiveFaq(activeFaq === i ? null : i)}>
                       <div className="p-6 flex justify-between items-center">
                          <h4 className="font-bold text-luxury-dark text-lg">{faq.q}</h4>
-                         <ChevronDown className={\`text-luxury-gold transition-transform \${activeFaq === i ? 'rotate-180' : ''}\`} />
+                         <ChevronDown className={"text-luxury-gold transition-transform " + (activeFaq === i ? "rotate-180" : "")} />
                       </div>
                       {activeFaq === i && (
                          <div className="px-6 pb-6 text-luxury-brown/80 font-light border-t border-luxury-stone/10 pt-4">

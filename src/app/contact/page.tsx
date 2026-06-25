@@ -78,12 +78,12 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-luxury-dark mb-2">First Name</label>
-                  <input {...register("firstName")} type="text" className={\`w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors \${errors.firstName ? 'border-red-500' : 'border-luxury-stone focus:border-luxury-gold'}\`} placeholder="John" />
+                  <input {...register("firstName")} type="text" className={"w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors " + (errors.firstName ? "border-red-500" : "border-luxury-stone focus:border-luxury-gold")} placeholder="John" />
                   {errors.firstName && <p className="text-red-500 text-xs mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1"/> {errors.firstName.message}</p>}
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-luxury-dark mb-2">Last Name</label>
-                  <input {...register("lastName")} type="text" className={\`w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors \${errors.lastName ? 'border-red-500' : 'border-luxury-stone focus:border-luxury-gold'}\`} placeholder="Doe" />
+                  <input {...register("lastName")} type="text" className={"w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors " + (errors.lastName ? "border-red-500" : "border-luxury-stone focus:border-luxury-gold")} placeholder="Doe" />
                   {errors.lastName && <p className="text-red-500 text-xs mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1"/> {errors.lastName.message}</p>}
                 </div>
               </div>
@@ -91,19 +91,19 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                  <div>
                    <label className="block text-sm font-medium text-luxury-dark mb-2">Email Address</label>
-                   <input {...register("email")} type="email" className={\`w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors \${errors.email ? 'border-red-500' : 'border-luxury-stone focus:border-luxury-gold'}\`} placeholder="john@example.com" />
+                   <input {...register("email")} type="email" className={"w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors " + (errors.email ? "border-red-500" : "border-luxury-stone focus:border-luxury-gold")} placeholder="john@example.com" />
                    {errors.email && <p className="text-red-500 text-xs mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1"/> {errors.email.message}</p>}
                  </div>
                  <div>
                    <label className="block text-sm font-medium text-luxury-dark mb-2">Phone Number</label>
-                   <input {...register("phone")} type="tel" className={\`w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors \${errors.phone ? 'border-red-500' : 'border-luxury-stone focus:border-luxury-gold'}\`} placeholder="(555) 123-4567" />
+                   <input {...register("phone")} type="tel" className={"w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors " + (errors.phone ? "border-red-500" : "border-luxury-stone focus:border-luxury-gold")} placeholder="(555) 123-4567" />
                    {errors.phone && <p className="text-red-500 text-xs mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1"/> {errors.phone.message}</p>}
                  </div>
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-luxury-dark mb-2">Service Required</label>
-                <select {...register("service")} className={\`w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors text-luxury-brown \${errors.service ? 'border-red-500' : 'border-luxury-stone focus:border-luxury-gold'}\`}>
+                <select {...register("service")} className={"w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors text-luxury-brown " + (errors.service ? "border-red-500" : "border-luxury-stone focus:border-luxury-gold")}>
                   <option value="">Select a Service...</option>
                   <option value="Residential Roof Replacement">Residential Roof Replacement</option>
                   <option value="Commercial Roofing">Commercial Roofing</option>
@@ -115,7 +115,7 @@ export default function Contact() {
 
               <div>
                 <label className="block text-sm font-medium text-luxury-dark mb-2">Message</label>
-                <textarea {...register("message")} rows={4} className={\`w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors \${errors.message ? 'border-red-500' : 'border-luxury-stone focus:border-luxury-gold'}\`} placeholder="Tell us about your property and project requirements..."></textarea>
+                <textarea {...register("message")} rows={4} className={"w-full border-b-2 bg-transparent py-2 focus:outline-none transition-colors " + (errors.message ? "border-red-500" : "border-luxury-stone focus:border-luxury-gold")} placeholder="Tell us about your property and project requirements..."></textarea>
                 {errors.message && <p className="text-red-500 text-xs mt-1 flex items-center"><AlertCircle className="w-3 h-3 mr-1"/> {errors.message.message}</p>}
               </div>
 
