@@ -3,40 +3,38 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { scrollY } = useScroll();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setIsScrolled(latest > 50);
+  });
 
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Projects", href: "/projects" },
-    { name: "FAQ", href: "/faq" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Why Us", href: "/why-choose-us" },
   ];
 
   return (
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? "bg-luxury-white/90 backdrop-blur-xl shadow-sm py-4" : "bg-transparent py-8"
       }`}
     >
-      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold tracking-tighter text-brand-blue">
-          Arrowhead Digitech
+      <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+        <Link href="/" className="text-2xl font-bold tracking-tighter text-luxury-dark">
+          Arrowhead <span className="text-luxury-gold font-light">Digitech</span>
         </Link>
         
         {/* Desktop Nav */}
@@ -45,8 +43,8 @@ export default function Navigation() {
             <Link
               key={link.name}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-brand-orange ${
-                isScrolled ? "text-brand-darkgray" : "text-brand-darkgray md:text-white"
+              className={`text-sm tracking-wide font-medium transition-colors hover:text-luxury-gold ${
+                isScrolled ? "text-luxury-dark" : "text-luxury-dark md:text-white"
               }`}
             >
               {link.name}
@@ -54,29 +52,33 @@ export default function Navigation() {
           ))}
           <Link
             href="/contact"
-            className="bg-brand-red text-white px-6 py-2 rounded-full font-medium hover:bg-brand-orange transition-colors"
+            className="bg-luxury-gold text-white px-8 py-3 rounded-sm tracking-wider font-medium hover:bg-luxury-brown transition-all duration-300 hover:shadow-lg shadow-luxury-gold/20"
           >
-            Contact Us
+            Get an Estimate
           </Link>
         </nav>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-brand-darkgray"
+          className="md:hidden text-luxury-dark"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          {mobileMenuOpen ? <X /> : <Menu />}
+          {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Mobile Nav */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 px-4 flex flex-col space-y-4">
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="md:hidden absolute top-full left-0 w-full bg-luxury-white shadow-2xl py-6 px-6 flex flex-col space-y-6 border-t border-luxury-stone"
+        >
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-brand-darkgray font-medium"
+              className="text-luxury-dark font-medium text-lg"
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.name}
@@ -84,12 +86,12 @@ export default function Navigation() {
           ))}
           <Link
             href="/contact"
-            className="bg-brand-red text-white text-center px-6 py-3 rounded-md font-medium"
+            className="bg-luxury-gold text-white text-center px-6 py-4 rounded-sm font-medium tracking-wide shadow-md"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Contact Us
+            Get an Estimate
           </Link>
-        </div>
+        </motion.div>
       )}
     </motion.header>
   );

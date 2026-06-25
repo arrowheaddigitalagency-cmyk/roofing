@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-blue: #0A192F;
-  --color-brand-red: #B91C1C;
-  --color-brand-orange: #EA580C;
-  --color-brand-gray: #F3F4F6;
-  --color-brand-darkgray: #1F2937;
+  --color-luxury-white: #FFFFFF;
+  --color-luxury-warm: #FAF8F4;
+  --color-luxury-cream: #F8F5EF;
+  --color-luxury-stone: #E8E1D6;
+  --color-luxury-brown: #7A5A3A;
+  --color-luxury-dark: #4B3621;
+  --color-luxury-gold: #C49A6C;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
@@ -13,8 +15,8 @@
 
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #0A192F;
+    --background: #FAF8F4;
+    --foreground: #4B3621;
   }
 
   body {
@@ -27,11 +29,18 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    color: var(--color-luxury-dark);
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg;
+    @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-lg;
+  }
+  .glass-dark {
+    @apply bg-[#4B3621]/80 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#7A5A3A] to-[#C49A6C];
   }
 }

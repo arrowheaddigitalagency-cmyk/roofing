@@ -1,0 +1,1 @@
+export default function Page() { return <div className='pt-32 pb-20 container mx-auto px-6'><h1 className='text-4xl font-bold mb-8 capitalize text-luxury-dark'>about</h1><p className='text-luxury-brown'>Content coming soon...</p></div> }

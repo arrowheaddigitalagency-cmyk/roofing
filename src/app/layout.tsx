@@ -16,7 +16,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Arrowhead Digitech | Premium Roofing Solutions",
+  title: "Arrowhead Digitech | Luxury Roofing Solutions",
   description: "Premium American roofing contractor services. Residential and commercial roofing solutions built on craftsmanship, durability, and trust.",
 };
 
@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${outfit.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-brand-gray text-brand-darkgray">
+      <body className="min-h-full flex flex-col bg-luxury-warm text-luxury-dark selection:bg-luxury-gold selection:text-white">
         <Providers>
           <Navigation />
           <main className="flex-grow">{children}</main>
