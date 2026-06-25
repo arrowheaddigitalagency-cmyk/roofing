@@ -181,7 +181,8 @@ export default function Contact() {
   );
 }
   `,
-  generic: (name) => \`
+  generic: (name) => {
+    return \`
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -209,7 +210,8 @@ export default function \${name.replace(/-/g, '')}() {
     </div>
   );
 }
-  \`
+  \`;
+}
 };
 
 Object.keys(templates).forEach(key => {
