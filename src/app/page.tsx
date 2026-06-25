@@ -37,7 +37,7 @@ export default function Home() {
       {/* SECTION 1: Full Screen Premium Hero */}
       <section ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
-          <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=33" alt="Luxury Home Roofing" fill className="object-cover" priority />
+          <Image unoptimized  src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg" alt="Luxury Home Roofing" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-luxury-dark/80 via-luxury-dark/50 to-luxury-warm"></div>
         </motion.div>
         
