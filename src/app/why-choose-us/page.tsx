@@ -18,7 +18,7 @@ export default function WhyChooseUs() {
     <div className="bg-luxury-warm min-h-screen">
       <section className="relative pt-40 pb-32 flex items-center justify-center">
         <div className="absolute inset-0 z-0">
-           <Image unoptimized  src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=2070&auto=format&fit=crop" alt="Premium Roofing" fill className="object-cover" />
+           <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=60" alt="Premium Roofing" fill className="object-cover" />
            <div className="absolute inset-0 bg-gradient-to-r from-luxury-dark/90 to-luxury-dark/60"></div>
         </div>
         <div className="container relative z-10 mx-auto px-6 text-center lg:text-left">
@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
                    </ul>
                  </div>
                  <div className="relative h-80 lg:h-full min-h-[400px] rounded-sm overflow-hidden">
-                    <Image unoptimized  src="https://images.unsplash.com/photo-1543884175-9c869910d6e8?q=80&w=1964&auto=format&fit=crop" alt="Quality Standard" fill className="object-cover" />
+                    <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=61" alt="Quality Standard" fill className="object-cover" />
                  </div>
               </div>
             </div>

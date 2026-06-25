@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 export default function Services() {
   const servicesList = [
-    { title: "Residential Roof Replacement", img: "https://images.unsplash.com/photo-1632759145355-66774f9d2732?q=80&w=2070&auto=format&fit=crop", desc: "A complete overhaul of your home's first line of defense. We strip down to the decking to ensure absolute structural integrity before applying premium architectural shingles or metal systems." },
-    { title: "Commercial Flat Roofing", img: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop", desc: "Enterprise-grade TPO, EPDM, and modified bitumen systems engineered for energy efficiency, extreme durability, and minimal business disruption during installation." },
-    { title: "Storm Damage Restoration", img: "https://images.unsplash.com/photo-1628189689452-f67fce533e55?q=80&w=2070&auto=format&fit=crop", desc: "Rapid response mitigation and complete restoration. We work directly with your insurance provider to ensure you receive the full scope of coverage you are entitled to." },
-    { title: "Preventative Maintenance", img: "https://images.unsplash.com/photo-1543884175-9c869910d6e8?q=80&w=1964&auto=format&fit=crop", desc: "Biannual comprehensive inspections, debris removal, and minor repairs designed to extend the lifespan of your roof by up to 30% and prevent catastrophic failures." }
+    { title: "Residential Roof Replacement", img: "https://loremflickr.com/1920/1080/roof,house?lock=56", desc: "A complete overhaul of your home's first line of defense. We strip down to the decking to ensure absolute structural integrity before applying premium architectural shingles or metal systems." },
+    { title: "Commercial Flat Roofing", img: "https://loremflickr.com/1920/1080/roof,house?lock=57", desc: "Enterprise-grade TPO, EPDM, and modified bitumen systems engineered for energy efficiency, extreme durability, and minimal business disruption during installation." },
+    { title: "Storm Damage Restoration", img: "https://loremflickr.com/1920/1080/roof,house?lock=58", desc: "Rapid response mitigation and complete restoration. We work directly with your insurance provider to ensure you receive the full scope of coverage you are entitled to." },
+    { title: "Preventative Maintenance", img: "https://loremflickr.com/1920/1080/roof,house?lock=59", desc: "Biannual comprehensive inspections, debris removal, and minor repairs designed to extend the lifespan of your roof by up to 30% and prevent catastrophic failures." }
   ];
 
   return (

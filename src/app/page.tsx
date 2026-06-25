@@ -19,10 +19,10 @@ export default function Home() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
   const services = [
-    { title: "Roof Replacement", icon: ShieldCheck, desc: "Premium materials and uncompromising craftsmanship for your luxury home.", image: "https://images.unsplash.com/photo-1632759145355-66774f9d2732?q=80&w=2070&auto=format&fit=crop" },
-    { title: "Roof Repair", icon: Wrench, desc: "Expert precision repairs restoring the integrity of your roof.", image: "https://images.unsplash.com/photo-1543884175-9c869910d6e8?q=80&w=1964&auto=format&fit=crop" },
-    { title: "Storm Restoration", icon: Droplets, desc: "Comprehensive storm damage assessment and premium restoration.", image: "https://images.unsplash.com/photo-1628189689452-f67fce533e55?q=80&w=2070&auto=format&fit=crop" },
-    { title: "Commercial", icon: Building2, desc: "Enterprise-grade roofing solutions for commercial properties.", image: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2072&auto=format&fit=crop" }
+    { title: "Roof Replacement", icon: ShieldCheck, desc: "Premium materials and uncompromising craftsmanship for your luxury home.", image: "https://loremflickr.com/1920/1080/roof,house?lock=29" },
+    { title: "Roof Repair", icon: Wrench, desc: "Expert precision repairs restoring the integrity of your roof.", image: "https://loremflickr.com/1920/1080/roof,house?lock=30" },
+    { title: "Storm Restoration", icon: Droplets, desc: "Comprehensive storm damage assessment and premium restoration.", image: "https://loremflickr.com/1920/1080/roof,house?lock=31" },
+    { title: "Commercial", icon: Building2, desc: "Enterprise-grade roofing solutions for commercial properties.", image: "https://loremflickr.com/1920/1080/roof,house?lock=32" }
   ];
 
   const faqs = [
@@ -37,7 +37,7 @@ export default function Home() {
       {/* SECTION 1: Full Screen Premium Hero */}
       <section ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
-          <Image unoptimized  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Luxury Home Roofing" fill className="object-cover" priority />
+          <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=33" alt="Luxury Home Roofing" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-luxury-dark/80 via-luxury-dark/50 to-luxury-warm"></div>
         </motion.div>
         
@@ -87,7 +87,7 @@ export default function Home() {
               </Link>
            </motion.div>
            <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="relative h-[600px] rounded-sm overflow-hidden shadow-2xl">
-              <Image unoptimized  src="https://images.unsplash.com/photo-1504307651254-35680f356f27?q=80&w=2070&auto=format&fit=crop" alt="Roofing Crew" fill className="object-cover" />
+              <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=34" alt="Roofing Crew" fill className="object-cover" />
            </motion.div>
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function Home() {
       <section className="py-32 bg-luxury-dark text-luxury-white">
          <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[500px] rounded-sm overflow-hidden shadow-2xl">
-               <Image unoptimized  src="https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop" alt="Quality Roofing Materials" fill className="object-cover" />
+               <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=35" alt="Quality Roofing Materials" fill className="object-cover" />
             </div>
             <div>
                <h2 className="text-4xl md:text-5xl font-bold mb-8">Why Choose Arrowhead Digitech?</h2>
@@ -156,7 +156,7 @@ export default function Home() {
                <Link href="/services" className="text-luxury-gold font-bold uppercase tracking-widest border-b-2 border-luxury-gold pb-1 hover:text-luxury-brown hover:border-luxury-brown transition-colors">View Residential Services</Link>
             </div>
             <div className="flex-1 w-full relative h-[400px] rounded-sm overflow-hidden shadow-xl">
-               <Image unoptimized  src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Luxury Residential Roof" fill className="object-cover" />
+               <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=36" alt="Luxury Residential Roof" fill className="object-cover" />
             </div>
          </div>
       </section>
@@ -170,7 +170,7 @@ export default function Home() {
                <Link href="/services" className="text-luxury-gold font-bold uppercase tracking-widest border-b-2 border-luxury-gold pb-1 hover:text-luxury-brown hover:border-luxury-brown transition-colors">View Commercial Services</Link>
             </div>
             <div className="flex-1 w-full relative h-[400px] rounded-sm overflow-hidden shadow-xl">
-               <Image unoptimized  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Commercial Flat Roof" fill className="object-cover" />
+               <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=37" alt="Commercial Flat Roof" fill className="object-cover" />
             </div>
          </div>
       </section>
@@ -184,7 +184,7 @@ export default function Home() {
                <Link href="/services" className="text-luxury-gold font-bold uppercase tracking-widest border-b-2 border-luxury-gold pb-1 hover:text-luxury-brown hover:border-luxury-brown transition-colors">Schedule an Inspection</Link>
             </div>
             <div className="flex-1 w-full relative h-[400px] rounded-sm overflow-hidden shadow-xl">
-               <Image unoptimized  src="https://images.unsplash.com/photo-1543884175-9c869910d6e8?q=80&w=1964&auto=format&fit=crop" alt="Roof Inspection and Repair" fill className="object-cover" />
+               <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=38" alt="Roof Inspection and Repair" fill className="object-cover" />
             </div>
          </div>
       </section>
@@ -195,11 +195,11 @@ export default function Home() {
             <h2 className="text-5xl font-bold mb-16">The Arrowhead Transformation</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                <div className="relative h-96 rounded-sm overflow-hidden border border-white/20">
-                  <Image unoptimized  src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop" alt="Before Roof Replacement" fill className="object-cover opacity-80" />
+                  <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=39" alt="Before Roof Replacement" fill className="object-cover opacity-80" />
                   <div className="absolute top-4 left-4 bg-black/70 px-4 py-2 font-bold tracking-widest uppercase text-sm">Before</div>
                </div>
                <div className="relative h-96 rounded-sm overflow-hidden border border-luxury-gold/50">
-                  <Image unoptimized  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="After Roof Replacement" fill className="object-cover" />
+                  <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=40" alt="After Roof Replacement" fill className="object-cover" />
                   <div className="absolute top-4 left-4 bg-luxury-gold text-luxury-dark px-4 py-2 font-bold tracking-widest uppercase text-sm">After</div>
                </div>
             </div>
@@ -209,7 +209,7 @@ export default function Home() {
       {/* SECTION 10: Project Statistics */}
       <section className="py-20 bg-luxury-gold relative overflow-hidden">
          <div className="absolute inset-0 opacity-10">
-            <Image unoptimized  src="https://images.unsplash.com/photo-1632759145355-66774f9d2732?q=80&w=2070&auto=format&fit=crop" alt="Texture" fill className="object-cover" />
+            <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=41" alt="Texture" fill className="object-cover" />
          </div>
          <div className="container mx-auto px-6 relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div><h3 className="text-5xl font-bold text-white mb-2">2,500+</h3><p className="text-luxury-dark font-bold uppercase tracking-widest">Roofs Installed</p></div>
@@ -228,10 +228,10 @@ export default function Home() {
             </div>
             <div className="max-w-4xl mx-auto space-y-12">
                {[
-                 { step: "01", title: "Comprehensive Inspection", desc: "We utilize advanced drone technology and physical assessments to evaluate your roof.", img: "https://images.unsplash.com/photo-1628189689452-f67fce533e55?q=80&w=2070&auto=format&fit=crop" },
-                 { step: "02", title: "Detailed Proposal", desc: "You receive a transparent, line-item estimate detailing materials, labor, and timelines.", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" },
-                 { step: "03", title: "Precision Execution", desc: "Our certified crews tear off the old roof, repair the decking, and install the new system.", img: "https://images.unsplash.com/photo-1504307651254-35680f356f27?q=80&w=2070&auto=format&fit=crop" },
-                 { step: "04", title: "Final Walkthrough", desc: "We clean the property magnetically and conduct a rigorous final quality assurance check.", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" }
+                 { step: "01", title: "Comprehensive Inspection", desc: "We utilize advanced drone technology and physical assessments to evaluate your roof.", img: "https://loremflickr.com/1920/1080/roof,house?lock=42" },
+                 { step: "02", title: "Detailed Proposal", desc: "You receive a transparent, line-item estimate detailing materials, labor, and timelines.", img: "https://loremflickr.com/1920/1080/roof,house?lock=43" },
+                 { step: "03", title: "Precision Execution", desc: "Our certified crews tear off the old roof, repair the decking, and install the new system.", img: "https://loremflickr.com/1920/1080/roof,house?lock=44" },
+                 { step: "04", title: "Final Walkthrough", desc: "We clean the property magnetically and conduct a rigorous final quality assurance check.", img: "https://loremflickr.com/1920/1080/roof,house?lock=45" }
                ].map((item, i) => (
                  <div key={i} className="flex flex-col md:flex-row items-center gap-8 bg-luxury-warm p-6 rounded-sm border border-luxury-stone/20 shadow-lg">
                     <div className="w-full md:w-1/3 h-48 relative rounded-sm overflow-hidden">
@@ -251,7 +251,7 @@ export default function Home() {
       {/* SECTION 12: Testimonials */}
       <section className="py-32 bg-luxury-dark relative overflow-hidden">
          <div className="absolute inset-0 opacity-20">
-            <Image unoptimized  src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=2070&auto=format&fit=crop" alt="Roofing Background" fill className="object-cover" />
+            <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=46" alt="Roofing Background" fill className="object-cover" />
          </div>
          <div className="container mx-auto px-6 relative z-10 text-center">
             <h2 className="text-5xl font-bold text-luxury-white mb-16">Client Experiences</h2>
@@ -287,7 +287,7 @@ export default function Home() {
                </div>
             </div>
             <div className="relative h-[600px] rounded-sm overflow-hidden shadow-2xl">
-               <Image unoptimized  src="https://images.unsplash.com/photo-1628189689452-f67fce533e55?q=80&w=2070&auto=format&fit=crop" alt="Drone Roof Inspection" fill className="object-cover" />
+               <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=47" alt="Drone Roof Inspection" fill className="object-cover" />
             </div>
          </div>
       </section>
@@ -295,7 +295,7 @@ export default function Home() {
       {/* SECTION 14: Contact CTA */}
       <section className="py-32 relative overflow-hidden text-center">
          <div className="absolute inset-0 z-0">
-            <Image unoptimized  src="https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop" alt="Roofing Construction Workers" fill className="object-cover" />
+            <Image unoptimized  src="https://loremflickr.com/1920/1080/roof,house?lock=48" alt="Roofing Construction Workers" fill className="object-cover" />
             <div className="absolute inset-0 bg-luxury-dark/90"></div>
          </div>
          <div className="container relative z-10 mx-auto px-6">

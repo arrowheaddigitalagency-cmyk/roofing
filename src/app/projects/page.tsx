@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
-    { title: "The Wellington Estate", category: "Luxury Residential", img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" },
-    { title: "Downtown Corporate Center", category: "Commercial", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" },
-    { title: "Oakridge Manor", category: "Premium Metal Roofing", img: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop" },
-    { title: "Lakeside Villa", category: "Architectural Shingle", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" },
-    { title: "Tech Hub Tower", category: "TPO Flat Roof", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" },
-    { title: "Highland Residence", category: "Storm Restoration", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" },
+    { title: "The Wellington Estate", category: "Luxury Residential", img: "https://loremflickr.com/1920/1080/roof,house?lock=49" },
+    { title: "Downtown Corporate Center", category: "Commercial", img: "https://loremflickr.com/1920/1080/roof,house?lock=50" },
+    { title: "Oakridge Manor", category: "Premium Metal Roofing", img: "https://loremflickr.com/1920/1080/roof,house?lock=51" },
+    { title: "Lakeside Villa", category: "Architectural Shingle", img: "https://loremflickr.com/1920/1080/roof,house?lock=52" },
+    { title: "Tech Hub Tower", category: "TPO Flat Roof", img: "https://loremflickr.com/1920/1080/roof,house?lock=53" },
+    { title: "Highland Residence", category: "Storm Restoration", img: "https://loremflickr.com/1920/1080/roof,house?lock=54" },
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function Projects() {
         </div>
 
         <div className="mt-24 bg-luxury-dark text-white p-16 text-center rounded-sm relative overflow-hidden">
-           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888081622-1df6b62174c8?q=80&w=2070&auto=format&fit=crop')] opacity-10 bg-cover bg-center"></div>
+           <div className="absolute inset-0 bg-[url('https://loremflickr.com/1920/1080/roof,house?lock=55')] opacity-10 bg-cover bg-center"></div>
            <div className="relative z-10">
              <h2 className="text-4xl font-bold mb-6">Inspired by what you see?</h2>
              <p className="text-luxury-stone text-lg mb-8 max-w-2xl mx-auto font-light">Let&apos;s discuss how Arrowhead Digitech can bring the same level of luxury and protection to your property.</p>
