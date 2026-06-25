@@ -22,7 +22,7 @@ export default function About() {
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <h2 className="text-4xl font-bold text-luxury-dark mb-6">The Arrowhead Story</h2>
-            <p className="text-luxury-brown/80 text-lg leading-relaxed mb-6 font-light">Founded on the principles of absolute integrity and unparalleled craftsmanship, Arrowhead Digitech has grown from a humble local contractor into the region's premier roofing authority.</p>
+            <p className="text-luxury-brown/80 text-lg leading-relaxed mb-6 font-light">Founded on the principles of absolute integrity and unparalleled craftsmanship, Arrowhead Digitech has grown from a humble local contractor into the region&apos;s premier roofing authority.</p>
             <p className="text-luxury-brown/80 text-lg leading-relaxed font-light">We don&apos;t just build roofs; we engineer comprehensive protection systems designed to withstand the harshest elements while enhancing the architectural beauty of your property.</p>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="relative h-96 rounded-sm overflow-hidden shadow-2xl">

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, ShieldCheck, Wrench, Droplets, Building2, CheckCircle, Star, Phone, Check, ChevronDown } from "lucide-react";
+import { ArrowRight, ShieldCheck, Wrench, Droplets, Building2, CheckCircle, Star, Phone, Check, ChevronDown, Award } from "lucide-react";
 import { useRef, useState } from "react";
 
 export default function Home() {
@@ -259,7 +259,7 @@ export default function Home() {
                <div className="flex justify-center mb-6">
                  {[1,2,3,4,5].map(i => <Star key={i} className="text-luxury-gold w-6 h-6 fill-current" />)}
                </div>
-               <p className="text-2xl text-luxury-stone italic mb-8 leading-relaxed">"Arrowhead Digitech completely transformed our property. The crew was professional, the job site was immaculate, and the final roof looks absolutely stunning. The best contractor experience we've ever had."</p>
+               <p className="text-2xl text-luxury-stone italic mb-8 leading-relaxed">&quot;Arrowhead Digitech completely transformed our property. The crew was professional, the job site was immaculate, and the final roof looks absolutely stunning. The best contractor experience we&apos;ve ever had.&quot;</p>
                <h4 className="text-xl font-bold text-luxury-white uppercase tracking-widest">- James & Sarah M.</h4>
             </div>
          </div>
